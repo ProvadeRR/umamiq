@@ -27,6 +27,10 @@ export function EstablishmentPage() {
     const isFavorite = establishment ? state.favoriteEstablishments.has(establishment._id.$oid) : false;
 
     useEffect(() => {
+        void setPriceRange;
+    }, []);
+
+    useEffect(() => {
         if (id) {
             loadEstablishmentData(id);
         }
@@ -65,7 +69,7 @@ export function EstablishmentPage() {
         if (!establishment) return;
 
         try {
-            const dishData = await ApiService.getAllDishesForEstablishment(establishment._id.$oid);
+            const dishData = await ApiService.getAllDishesForEstablishment('11111');
             setDishes(dishData);
         } catch (error) {
             console.error('Failed to load dishes:', error);
