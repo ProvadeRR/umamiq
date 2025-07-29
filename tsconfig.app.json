@@ -24,7 +24,8 @@
     "noUncheckedSideEffectImports": true,
     "types": [
         "vite-plugin-pwa/client"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"]
 }
