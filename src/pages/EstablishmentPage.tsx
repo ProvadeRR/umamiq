@@ -69,7 +69,7 @@ export function EstablishmentPage() {
         if (!establishment) return;
 
         try {
-            const dishData = await ApiService.getAllDishesForEstablishment('11111');
+            const dishData = await ApiService.getAllDishesForEstablishment();
             setDishes(dishData);
         } catch (error) {
             console.error('Failed to load dishes:', error);
