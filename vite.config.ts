@@ -5,7 +5,7 @@ import {type ManifestOptions, VitePWA} from "vite-plugin-pwa";
 // https://vite.dev/config/
 
 const manifest: Partial<ManifestOptions> | false = {
-    "theme_color": "#8936FF",
+    "theme_color": "#ffffff",
     "background_color": "#2EC6FE",
     "icons": [
         {
